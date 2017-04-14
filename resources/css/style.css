@@ -6,41 +6,46 @@ body {
   opacity: 0.9;
 }
 
-.logo img,
-header,
-nav {
-    border: 1px dotted yellow;
+/* header section including logo and navigation */
+.logo {
+  height: 50px;
+  display: flex;
 }
 
 .logo img {
-  height: 50px;
-  margin-left: 10px;
-  display: inline-block;
+  height: 100%;
 }
 
 header {
   border-bottom: 1px solid seashell;
-  display: flex;
   height: 69px;
-  position: fixed;
   width: 100%;
   z-index: 2;
   background-color: black;
   align-items: center;
+  position: fixed;
+  display: flex;
 }
 
-li {
-  display: inline-block;
+nav ul li {
+  display: flex;
   text-decoration: underline;
+  margin-left: 15px;
 }
 
-ul {
-  text-align: right;
+nav ul {
+  display: flex;
+
 }
 
 nav {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
 }
+
+/*general body styling */
 
 .body-container {
   padding-top: 69px;
@@ -49,12 +54,74 @@ nav {
   align-items: center;
 }
 
+/*mission block*/
+
 .mission-container {
-background-image: url("../../resources/images/img-mission-background.jpg");
-height: 700px;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+  height: 700px;
+  display: flex;
+  align-items: center;
 }
 
 .mission-text {
-text-align: center;
-background-color: black;
+  text-align: center;
+  background-color: black;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin bottom: 0;
+}
+
+h2 {
+  padding-bottom: 0;
+  line-height: 10px;
+}
+
+/*tea of the month block*/
+
+.featured-tea,
+.tea-display,
+.tea-title,
+.tea {
+  display:flex;
+}
+
+.tea {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.featured-tea {
+  width: 1050px;
+  margin-top: 50px;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+.tea-img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.tea-img img {
+  width: 100%;
+}
+
+.featured-tea {
+  flex-direction: column;
+}
+
+.tea-title {
+  flex-direction: column;
+  align-items: center;
+}
+
+.tea-display {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
