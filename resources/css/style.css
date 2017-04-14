@@ -176,8 +176,13 @@ h4 {
 
 /* contact info styling */
 
-
-
-
+.contact-info {
+  text-align: center;
+  height: 200px;
+}
 
 /*footer styling */
+footer {
+  width: 100%;
+  padding-left: 20px;
+}
